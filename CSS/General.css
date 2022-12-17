@@ -6,10 +6,7 @@
   text-decoration: none;
   color: inherit;
 }
-section{
-  overflow-x: hidden;
 
-}
 
 html{
   overflow-x: hidden;
@@ -45,10 +42,10 @@ main{background: rgba(245, 245, 245, 1);}
 }
 .BtnBox,.DropDownList,[data-Status='unactive']{display: none;}
 [data-Anim="Scroll"]{opacity: 0 !important;transition: transform  .7s, opacity .7s;}
-[data-AnimDirect="top"]{transform: translateY(-20px);}
-[data-AnimDirect="bottom"]{transform: translateY(20px);}
-[data-AnimDirect="left"]{transform: translateX(-20px);}
-[data-AnimDirect="right"]{transform: translateX(20px);}
+[data-AnimDirect="top"]{transform: translateY(-16px);}
+[data-AnimDirect="bottom"]{transform: translateY(16px);}
+[data-AnimDirect="left"]{transform: translateX(-16px);}
+[data-AnimDirect="right"]{transform: translateX(16px);}
 .Visible  [data-AnimDirect="top"],.Visible  [data-AnimDirect="bottom"],.Visible  [data-AnimDirect="left"],.Visible  [data-AnimDirect="right"]{
   opacity: 1 !important;
   transform: translate(0,0);
