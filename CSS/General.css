@@ -5,6 +5,7 @@
   list-style-type: none;
   text-decoration: none;
   color: inherit;
+  overflow-x: hidden;
 }
 body{
   overflow-x: hidden;
