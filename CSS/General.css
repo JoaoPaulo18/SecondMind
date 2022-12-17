@@ -5,11 +5,12 @@
   list-style-type: none;
   text-decoration: none;
   color: inherit;
-  overflow-x: hidden;
 }
-body{
+section{
   overflow-x: hidden;
+
 }
+
 html{
   overflow-x: hidden;
   scroll-behavior: smooth;
