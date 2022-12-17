@@ -1,0 +1,77 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit;
+}
+html{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+main{background: rgba(245, 245, 245, 1);}
+:root{
+  --ColorBlue:#03a9f4;
+  --BackgroundHeader:transparent;
+  --BtnColor:white;
+  --Shadow:transparent;
+  --TextColor:white;
+}
+.Moved .ArrowUp{display: flex;}
+.ArrowUp{
+  padding: .5rem .8rem;
+  background:#03a9f4;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 10px;
+  bottom: 10px; 
+  opacity: .3;
+}
+.ArrowUp:hover{
+  opacity: 1;
+}
+.ArrowUp img{
+  width: 20px;
+  position: relative;
+  z-index: 100;
+}
+.BtnBox,.DropDownList,[data-Status='unactive']{display: none;}
+[data-Anim="Scroll"]{opacity: 0 !important;transition: transform  .7s, opacity .7s;}
+[data-AnimDirect="top"]{transform: translateY(-20px);}
+[data-AnimDirect="bottom"]{transform: translateY(20px);}
+[data-AnimDirect="left"]{transform: translateX(-20px);}
+[data-AnimDirect="right"]{transform: translateX(20px);}
+.Visible  [data-AnimDirect="top"],.Visible  [data-AnimDirect="bottom"],.Visible  [data-AnimDirect="left"],.Visible  [data-AnimDirect="right"]{
+  opacity: 1 !important;
+  transform: translate(0,0);
+}
+
+footer{
+  text-align: center;
+  font-family: 'Mulish';
+  padding: 2rem 1rem;
+  color: rgba(44, 44, 44, .8);
+}
+
+.Whatsapp{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: green;
+  display: flex;
+  place-content: center;
+  opacity: .4;
+  cursor: pointer;
+}
+.Whatsapp:hover{
+  opacity: 1;
+}
+.Whatsapp img{
+  max-width: 20px;
+}

@@ -1,0 +1,74 @@
+.Hero_bg{
+  background-image: url("../Images/fundo_social.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.Hero_container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'Mulish';
+  color: white;
+}
+.Title_hero{
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 4rem;
+}
+
+.Subtitle_hero{
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.Hero_btns{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-family: 'Open Sans';
+  font-weight: 600;
+}
+.Hero_Start{
+  background: var(--ColorBlue);
+  border-radius: 30px;
+  padding: 1rem 1.8rem;
+  border: 2px solid transparent;
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.Hero_More{
+  background: transparent;
+  border-radius: 30px;
+  border: 2px solid white;
+  padding: 1rem 1.8rem;
+  transition: .3s ease;
+  cursor: pointer;
+}
+.Hero_Start:hover{
+  background: transparent;
+  border-color: white;
+}
+.Hero_More:hover{
+  background: var(--ColorBlue);
+  border-color: transparent;
+}
+
+@media (max-width:460px) {
+  .Title_hero{
+    font-size: 2.5rem;
+  }
+  .Subtitle_hero{
+    font-size: 1.25rem;
+  }
+  .Hero_Start,.Hero_More{
+  padding: .8rem 1.25rem;
+  font-size: .8rem;
+  }
+}

@@ -1,0 +1,106 @@
+.Contact_bg{
+  background: url('../Images/fundo_social.jpg')no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 1rem;
+}
+
+.Contact{
+  max-width: max-content;
+  margin: 2rem auto;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 1rem;
+  color: rgba(255, 255, 255, .85);
+  font-family: 'Open Sans';
+
+}
+
+.Contato_title{
+  font-size: 2.5rem;
+  color: white;
+}
+.Contato_subtitle{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.ContactsAdress{
+  text-align: left;
+  justify-self: left;
+  display: grid;
+  gap: .5rem;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 900;
+}
+.FormContato{
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  color: rgba(44, 44, 44, .8);
+  display: grid;
+  justify-items: left;
+}
+label{
+  margin-bottom: .3rem;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+.Contact input,.Contact textarea{
+  padding: .9rem;
+  border: 1px solid var(--ColorBlue);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  outline: none;
+  width: 100%;
+  transition: .4s;
+}
+.Contact textarea{
+  width: 100%;
+  max-width: 950px;
+  min-height: 50px;
+  resize: vertical;
+}
+.Contact input:focus,.Contact textarea:focus{
+  box-shadow:1px 1px 15px 0 var(--ColorBlue);
+}
+
+.SendMes{
+  background:var(--ColorBlue) ;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 2px 0 0 rgba(44, 44, 44, .4);
+  transition: .4s ease;
+}
+.SendMes:hover{
+  transform: scale(.95);
+  box-shadow: none;
+}
+
+@media (max-width:650px) {
+  .Contato_title{
+    font-size: 2rem;
+  }
+  .Contato_subtitle{
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  .ContactsAdress{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:300px){
+.FormContato{
+  padding: 1rem;
+}
+.ContactsAdress{
+  font-size: .8rem;
+}
+}

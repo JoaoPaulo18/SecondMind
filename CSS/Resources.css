@@ -1,0 +1,135 @@
+.Recursos {
+  margin: 2rem 0;
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  gap: 1.25rem;
+}
+
+.Recursos_Title{
+  font-family: 'Mulish';
+  font-weight: 600;
+  font-size: 3rem;
+  color: rgba(44, 44, 44, .8);
+}
+
+.Recursos_Subtilte{
+  font-family: 'Mulish';
+  font-weight: 100;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: rgba(44, 44, 44, .7);
+  max-width: 80ch;
+}
+.Recursos_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 0 3rem;
+}
+.Recurso_Single{
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 1rem;
+  grid-template-rows: max-content max-content;
+  text-align: left;
+  border: 1px solid #FF9800;
+  border-radius: 10px;
+  padding: 1.5rem;
+  font-family: 'Mulish';
+  transition: box-shadow .4s ,transform  .7s, opacity .7s;
+}
+.Recurso_Single:hover{
+  box-shadow: 1px 1px 15px 0 #FF9800;
+}
+.Recurso_text{
+  display: grid;
+  gap: .5rem;
+}
+.Icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  max-width: 60px;
+  height: 60px;
+  border: 2px solid #FF9800;
+}
+
+.Icon img{
+  max-width: 35px;
+  width: 100%;
+}
+.Recurso_name{
+  height: max-content;
+  align-self: end;
+  font-size: 1rem;
+  font-weight: 900;
+  color: #FF9800;
+}
+.Recurso_desc{
+  align-self: start;
+  color: rgba(44, 44, 44, .7);
+  font-size: 1.15rem;
+}
+@media (max-width:940px) {
+  .Recurso_desc{
+    font-size: 1rem;
+  }
+}
+@media (max-width:900px) {
+  .Recursos_container{
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .Recursos{
+    padding:0 1rem;
+  }
+  .Recurso_Single{
+    animation: MobileShine 1s alternate infinite;
+    animation-fill-mode: backwards;
+  }
+  .Recurso_Single:hover{
+    box-shadow: 0px 0px 8px 0 #FF9800;
+  
+  }
+}
+@media (max-width:490px) {
+  .Recursos_Title{
+    font-size: 2rem;
+  }
+  .Recursos_Subtilte{
+    font-size: .8rem;
+  }
+  .Recurso_Single{
+    gap: .5rem;
+  }
+  .Recurso_name{
+    font-size: .9rem;
+  }
+  .Recurso_desc{
+    font-size: .8rem;
+  }
+  .Icon{
+    width: 50px;
+    height: 50px;
+  }
+  .Icon img{
+    max-width: 30px;
+  }
+}
+@media (max-width:360px) {
+  .Recursos_Subtilte{
+    font-size: .6rem;
+  }
+  .Recurso_Single{
+    grid-template-columns: 1fr;
+  text-align: center;
+ } 
+ .Icon{
+  justify-self: center;
+  grid-row: 1;
+  width: 50px;
+ }
+}

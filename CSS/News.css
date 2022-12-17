@@ -1,0 +1,140 @@
+.News{
+  text-align: center;
+  font-family: 'Mulish';
+  display: grid;
+  justify-items: center;
+  padding: 2rem 3rem;
+  gap: 1rem;
+}
+
+.News_title{
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgba(44, 44, 44, .8);
+}
+
+.News_subtitle{
+  font-weight: 100;
+  color: rgba(44, 44, 44, .7);
+  max-width: 80ch;
+}
+
+.News_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.New{
+  box-shadow: 1px 1px 10px 0 rgba(44, 44, 44, .5);
+  border-radius: 10px;
+}
+
+
+.News_img img{
+  border-radius: 10px 10px 0 0;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.News_texts{
+  padding: 1rem;
+  padding-bottom:3rem ;
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  text-align: left;
+}
+
+.New_name{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgba(44, 44, 44, .8);
+}
+
+.New_desc{
+  font-weight: 100;
+  color: rgba(44, 44, 44, .7);
+}
+
+.News_plus{
+  border: 1px solid var(--ColorBlue);
+  border-radius: 20px;
+  padding: .5rem 1rem;
+  color: rgba(44, 44, 44, .9);
+  position: relative;
+  overflow:hidden;
+}
+.News_plus span{
+  position: relative;
+  z-index: 3;
+  transition: .5s;
+}
+.News_plus::before{
+content: '';
+width: 100%;
+height: 100%;
+top: 0;
+left: -200%;
+position: absolute;
+background: var(--ColorBlue);
+color: white;
+border-radius: 20px;
+border: 1px solid var(--ColorBlue);
+transition: .4s;
+perspective-origin: right;
+}
+.News_plus:hover::before{
+  left: 0;
+}
+.News_plus:hover span{
+  color: white;
+}
+
+.SeeAll{
+  color: white;
+  font-family: 'Open Sans';
+  border-radius: 30px;
+  padding: 1rem 1.5rem;
+  background: var(--ColorBlue);
+  animation: Shine .8s ease infinite alternate;
+  transition: .2s ease;
+}
+.SeeAll:hover{
+  transform: scale(1.05);
+}
+@media (max-width:900px) {
+  .News_container{
+    grid-template-columns: 1fr 1fr;
+  }
+    .New_name{
+      font-size: 1.1rem;
+    }
+    .News_desc{
+      font-size: .9rem;
+    }
+}
+
+@media (max-width:680px) {
+  .News{
+    padding: 1rem;
+  }
+  .News_container{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:300px){
+  .News_title{
+    font-size: 2rem;
+  }
+  .News_subtitle{
+    font-size: 1rem;
+  }
+  .New_name{
+    font-size: 1rem;
+  }
+  .News_desc{
+    font-size: .8rem;
+  }
+}
