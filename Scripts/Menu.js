@@ -1,6 +1,7 @@
 export default class Menu{
-  constructor(Btn,Outside){
+  constructor(Btn,Ancora,Outside){
     this.Btn = document.querySelectorAll(Btn);
+    this.Ancora = document.querySelectorAll(Ancora);
     this.Outside = document.querySelector(Outside);
     this.HandleClick = this.HandleClick.bind(this);
     this.HandleClickOutSide = this.HandleClickOutSide.bind(this);
@@ -20,6 +21,7 @@ export default class Menu{
   // Adicionamos/Removemos a classe click ao clicar
   // Verificamos se o click foi no botão de abrir o menu
   HandleClick(event){
+    console.log(this.Btn)
     event.currentTarget.classList.toggle('click');
     if(this.Outside){
       this.Outside.addEventListener('touchstart', this.HandleClickOutSide);
@@ -30,9 +32,10 @@ export default class Menu{
   // Adicionamos o evento de click em todos botões necessários
   init(){
     if(this.Btn.length)
-    this.Btn.forEach(btn =>{
-      btn.addEventListener("click", this.HandleClick);
-    })
-      return this;
+    this.Btn.forEach(btn =>btn.addEventListener("click", this.HandleClick))
+    if(this.Ancora.length) 
+    this.Ancora.forEach(ancora => ancora.addEventListener("click",()=>  this.Btn[0].classList.remove('click')))
+  
+    return this;
   }
 }

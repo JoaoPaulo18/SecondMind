@@ -18,7 +18,7 @@
   border: 1px solid var(--ColorBlue);
   position: relative;
 }
-.Servico_single:hover  .ReadMore_bg{
+.ReadMore_bg:hover{
   opacity: 1;
 }
 .Service_img{

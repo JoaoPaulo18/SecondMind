@@ -1,7 +1,7 @@
 import Menu from "./Menu.js";
 import Scroll from "./Scroll.js";
 
-const menu = new Menu('.BtnBox','.Background');
+const menu = new Menu(".BtnBox", ".Ancora",'.Background');
 menu.init();
 
 const ItensMenu = new Menu('.DropDown');

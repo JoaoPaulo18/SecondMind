@@ -6,7 +6,7 @@
   text-align: center;
 }
 .Clientes_title{
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
   color: rgba(44, 44, 44, .8);
 }
@@ -64,12 +64,9 @@
   }
 }
 
-@media (max-width:490px){
-  .Clientes_title{
-    font-size: 1.5rem;
-  }
+@media (max-width:300px){
   .Clientes_subtitle{
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   
 }
