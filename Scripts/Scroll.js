@@ -1,4 +1,6 @@
 export default class Scroll{
+// Selecionamos os elementos
+// Pegamos a metade da tela
   constructor(Header, Sections){
     this.Header = document.querySelector(Header);
     this.Sections = document.querySelectorAll(Sections);
@@ -6,6 +8,9 @@ export default class Scroll{
     this.windowHalf = Math.floor(window.innerHeight * 0.6);
   }
 
+// Verificamos a posição da section
+// Se ela estiver na metade da tela ativados
+// Se estiver abaixo desativamos
   HandleScroll(event){
     if(window.scrollY > 0) this.Header.classList.add('Moved');
     else this.Header.classList.remove('Moved');
