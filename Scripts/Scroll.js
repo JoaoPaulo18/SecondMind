@@ -9,7 +9,7 @@ export default class Scroll{
   }
 
 // Verificamos a posição da section
-// Se ela estiver na metade da tela ativados
+// Se ela estiver na metade da tela ativamos
 // Se estiver abaixo desativamos
   HandleScroll(event){
     if(window.scrollY > 0) this.Header.classList.add('Moved');
